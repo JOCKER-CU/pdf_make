@@ -1,0 +1,52 @@
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 75px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 10;
+    padding: 0 30px;
+    display: flex;
+
+    &&__content-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__filename {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: 24px;
+
+    }
+
+    &__page-indicator {
+        align-items: center;
+        justify-self: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &-current {
+            font-weight: bold;
+        }
+
+        &_separator {
+            margin: 0 5px;
+        }
+
+        &-total {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
